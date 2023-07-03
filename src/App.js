@@ -1,3 +1,4 @@
+import Content from "./Content";
 import Header from "./Header/Header";
 
 
@@ -7,6 +8,9 @@ function App() {
       <header>
         <Header/>
       </header>
+      <section>
+        <Content/>
+      </section>
     </div>
   );
 }

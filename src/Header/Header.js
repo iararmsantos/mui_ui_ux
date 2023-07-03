@@ -6,7 +6,7 @@ import ToolbarContent from '../Toolbar';
 
 const Header = () => {
   return (
-    <AppBar sx={{bgcolor: 'transparent', boxShadow: 0}}>
+    <AppBar sx={{bgcolor: 'transparent', boxShadow: 0, position: "sticky"}}>
         <Toolbar>
             <ToolbarContent/>
         </Toolbar>
