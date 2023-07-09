@@ -1,7 +1,8 @@
 import React from 'react';
-import { Box, Button, Typography } from '@mui/material'
+import { Box, Button } from '@mui/material'
 import GoogleIcon from '@mui/icons-material/Google';
 import EmailIcon from '@mui/icons-material/Email';
+import {CustomizedTypography} from '../Styles'
 
 const Animation = () => {
   return (
@@ -17,7 +18,7 @@ const Animation = () => {
       >
       </video>
       <Box display='flex' width='100%'>
-        <Typography
+        <CustomizedTypography
           fontSize={{lg:30, md:24, sm:18, xs:14}}
           margin='auto'
           variant='h4'
@@ -25,7 +26,7 @@ const Animation = () => {
           textAlign='center'
         >
           Build Your Softwares Free And With Top Notch Quality
-        </Typography>
+        </CustomizedTypography>
       </Box>
       <Box
         width='100%'

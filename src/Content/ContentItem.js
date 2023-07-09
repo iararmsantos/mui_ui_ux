@@ -1,5 +1,6 @@
-import { Box, Typography, useMediaQuery, useTheme } from '@mui/material'
+import { Box, useMediaQuery, useTheme } from '@mui/material'
 import React from 'react'
+import { CustomizedTypography } from '../Styles';
 
 const ContentItem = ({ title, description, img, swap }) => {
   const isMatch = useMediaQuery(useTheme().breakpoints.down('md'));
@@ -14,20 +15,21 @@ const ContentItem = ({ title, description, img, swap }) => {
       flexDirection={isMatch ? "column" : "row"}
     >
       {swap ? <>  <Box>
-        <Typography
+        <CustomizedTypography
           fontSize={{lg: 32, md: 28, sm: 24, xs: 20}}
           color="#734950"
           padding={3}
           variant='h3'
+          fontWeight={'bold'}
         >
           {title}
-        </Typography>
-        <Typography
+        </CustomizedTypography>
+        <CustomizedTypography
           fontSize={{lg: 30, md: 24, sm: 18, xs: 14}}
           padding={3}                    
         >
           {description}
-        </Typography>
+        </CustomizedTypography>
       </Box>
         <img
           src={img}
@@ -54,20 +56,21 @@ const ContentItem = ({ title, description, img, swap }) => {
           height='300px'
         />
         <Box>
-          <Typography
+          <CustomizedTypography
             fontSize={{lg: 32, md: 28, sm: 24, xs: 20}}
             color="#734950"
             padding={3}
             variant='h3'
+            fontWeight={'bold'}
           >
             {title}
-          </Typography>
-          <Typography  
+          </CustomizedTypography>
+          <CustomizedTypography  
             fontSize={{lg: 24, md: 20, sm: 16, xs: 14}}                      
             padding={3}
           >
             {description}
-          </Typography>
+          </CustomizedTypography>
         </Box>
       </>
       }

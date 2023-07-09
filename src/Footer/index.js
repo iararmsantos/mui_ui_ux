@@ -1,5 +1,6 @@
-import { Box, Button, Typography } from '@mui/material'
+import { Box, Button } from '@mui/material'
 import React from 'react'
+import { CustomizedTypography } from '../Styles'
 
 const index = () => {
   return (
@@ -7,7 +8,7 @@ const index = () => {
         display='flex'
         flexDirection='column'   
     >
-        <Typography
+        <CustomizedTypography
             fontSize={{lg: 30, md: 24, sm: 18, xs: 14}}
             variant='h3'
             paddingTop={10}
@@ -15,15 +16,15 @@ const index = () => {
             fontWeight='bold'
         >
             Ready For Any Team Size
-        </Typography>
-        <Typography
+        </CustomizedTypography>
+        <CustomizedTypography
             fontSize={{lg: 24, md: 20, sm: 16, xs: 12}}
             variant='div'
             textAlign='center'
             padding={4}
         >
             Optimized For Any Team Size
-        </Typography>
+        </CustomizedTypography>
         <Box
             display='flex'
             margin='auto'
@@ -32,12 +33,12 @@ const index = () => {
         >
             <Button                
                 variant='contained'
-                sx={{ mr: 2, fontSize:{lg: 20, md: 17, sm: 12, xs: 8} }}
+                sx={{ mr: 2, fontSize:{lg: 18, md: 17, sm: 12, xs: 8} }}
             >
                 Try CodeEnv For Free</Button>
             <Button                  
                 variant='outlined'
-                sx={{ ml: 2, fontSize:{lg: 20, md: 17, sm: 12, xs: 8} }}
+                sx={{ ml: 2, fontSize:{lg: 18, md: 17, sm: 12, xs: 8} }}
             >
                 Talk To Sales</Button>
         </Box>
