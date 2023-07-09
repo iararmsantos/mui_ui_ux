@@ -8,13 +8,16 @@ const index = () => {
         flexDirection='column'   
     >
         <Typography
+            fontSize={{lg: 30, md: 24, sm: 18, xs: 14}}
             variant='h3'
             paddingTop={10}
             textAlign='center'
+            fontWeight='bold'
         >
             Ready For Any Team Size
         </Typography>
         <Typography
+            fontSize={{lg: 24, md: 20, sm: 16, xs: 12}}
             variant='div'
             textAlign='center'
             padding={4}
@@ -27,14 +30,14 @@ const index = () => {
             justifyContent='center'
             padding={5}
         >
-            <Button 
+            <Button                
                 variant='contained'
-                sx={{ mr: 2 }}
+                sx={{ mr: 2, fontSize:{lg: 20, md: 17, sm: 12, xs: 8} }}
             >
                 Try CodeEnv For Free</Button>
-            <Button 
+            <Button                  
                 variant='outlined'
-                sx={{ ml: 2 }}
+                sx={{ ml: 2, fontSize:{lg: 20, md: 17, sm: 12, xs: 8} }}
             >
                 Talk To Sales</Button>
         </Box>

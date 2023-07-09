@@ -23,7 +23,7 @@ const ContentItem = ({ title, description, img, swap }) => {
           {title}
         </Typography>
         <Typography
-          fontSize={{lg: 24, md: 20, sm: 16, xs: 14}}
+          fontSize={{lg: 30, md: 24, sm: 18, xs: 14}}
           padding={3}                    
         >
           {description}
